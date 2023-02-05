@@ -176,6 +176,7 @@ body {
 
 .cardSteam {
    width: 100%;
+   cursor: pointer;
 }
 
 .accordion-item {
