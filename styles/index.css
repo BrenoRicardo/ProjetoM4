@@ -47,7 +47,7 @@ body {
    color: rgb(63, 131, 234);
    padding-bottom: 20px;
    text-decoration: underline 2px rgb(255, 255, 255);
-   text-shadow: 2px 2px 2px #01154d
+   text-shadow: rgb(3, 3, 255) 1px 0 10px;
 }
 
 .ladoalado {
@@ -63,7 +63,7 @@ body {
 
 .container {
    position: relative;
-   width: 1280px;
+   width: 120%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -176,4 +176,13 @@ body {
 
 .cardSteam {
    width: 100%;
+}
+
+.accordion-item {
+   background: linear-gradient(#0D324D, #732c7c);
+}
+
+.accordion-button {
+   background: #082dcf5d;
+   color: white;
 }
