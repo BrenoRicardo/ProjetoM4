@@ -20,14 +20,16 @@ Após escolhermos o tema, fomos elaborando as perguntas e, com isso, ficamos bem
 # Perguntas respondidas no site
 1a : 5 Jogos grátis mais avaliados  
 <br>
-![img]https://github.com/Man-noel/ProjetoM4/tree/main/1a.png?raw=true) <br>
+<br>
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price = 0 order by avaliacoes desc limit 5 ;
+<img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/1a.png">
 <br>
 <br>
 2a : 5 jogos pagos mais avaliados  
 <br>
 <br>
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price > 0 order by avaliacoes desc limit 5 ;
+<img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/2a.png">
 <br>
 <br>
 3a : 5 jogos mais avaliados por menos de 9 USS
@@ -35,6 +37,7 @@ select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings
 <br>
 
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price between 1 and 10 order by avaliacoes desc limit 5 ;
+<img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/3a.png">
 <br>
 <br>
 4a :	5 jogos mais avaliados 
@@ -42,6 +45,10 @@ select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings
 <br>
 
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam order by avaliacoes desc limit 5 ;
+<br>
+<img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/4a.png">
+
+
 
 
 
