@@ -19,15 +19,26 @@ Após escolhermos o tema, fomos elaborando as perguntas e, com isso, ficamos bem
 # ProjetoM4
 # Perguntas respondidas no site
 1a : 5 Jogos grátis mais avaliados  
-
+<br><br>
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price = 0 order by avaliacoes desc limit 5 ;
+<br>
+<br>
 2a : 5 jogos pagos mais avaliados  
-
+<br>
+<br>
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price > 0 order by avaliacoes desc limit 5 ;
+<br>
+<br>
 3a : 5 jogos mais avaliados por menos de 9 USS
+<br>
+<br>
 
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price between 1 and 10 order by avaliacoes desc limit 5 ;
+<br>
+<br>
 4a :	5 jogos mais avaliados 
+<br>
+<br>
 
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam order by avaliacoes desc limit 5 ;
 
