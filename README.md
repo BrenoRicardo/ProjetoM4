@@ -21,14 +21,23 @@ Após escolhermos o tema, fomos elaborando as perguntas e, com isso, ficamos bem
 1a : 5 Jogos grátis mais avaliados  
 <br>
 <br>
-select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price = 0 order by avaliacoes desc limit 5 ;
+SELECT name,(positive_ratings+negative_ratings)AS avaliacoes,
+( (positive_ratings/ (positive_ratings+negative_ratings) )*100) AS porcentagem_positiva, 
+( (negative_ratings/(positive_ratings+negative_ratings))*100)AS porcentagem_negativa 
+FROM steam WHERE price = 0 
+ORDER BY avaliacoes DESC limit 5 ;
 <img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/1a.png">
 <br>
 <br>
 2a : 5 jogos pagos mais avaliados  
 <br>
 <br>
-select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price > 0 order by avaliacoes desc limit 5 ;
+SELECT name,(positive_ratings+negative_ratings)AS avaliacoes,
+( (positive_ratings/ (positive_ratings+negative_ratings) )*100) AS porcentagem_positiva, 
+( (negative_ratings/(positive_ratings+negative_ratings))*100)AS porcentagem_negativa 
+FROM steam 
+WHERE price > 0 
+ORDER BY avaliacoes DESC LIMIT 5 ;
 <img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/2a.png">
 <br>
 <br>
@@ -36,7 +45,12 @@ select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings
 <br>
 <br>
 
-select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price between 1 and 10 order by avaliacoes desc limit 5 ;
+SELECT name,(positive_ratings+negative_ratings)AS avaliacoes,
+( (positive_ratings/ (positive_ratings+negative_ratings) )*100) AS porcentagem_positiva, 
+( (negative_ratings/(positive_ratings+negative_ratings))*100)AS porcentagem_negativa 
+FROM steam 
+WHERE price BETWEEN 1 and 10 
+ORDER BY avaliacoes DESC LIMIT 5 ;
 <img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/3a.png">
 <br>
 <br>
@@ -44,7 +58,11 @@ select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings
 <br>
 <br>
 
-select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam order by avaliacoes desc limit 5 ;
+SELECT name,(positive_ratings+negative_ratings)AS avaliacoes,
+( (positive_ratings/ (positive_ratings+negative_ratings) )*100) AS porcentagem_positiva, 
+( (negative_ratings/(positive_ratings+negative_ratings))*100)AS porcentagem_negativa 
+FROM steam 
+ORDER BY avaliacoes DESC LIMIT 5 ;
 <br>
 <img src="https://raw.githubusercontent.com/Man-noel/ProjetoM4/main/imagens/4a.png">
 
