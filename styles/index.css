@@ -187,3 +187,12 @@ body {
    background: #082dcf5d;
    color: white;
 }
+
+#apresentacao {
+   display: none;
+   position: fixed;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.459);
+}
