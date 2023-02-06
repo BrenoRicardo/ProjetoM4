@@ -19,7 +19,8 @@ Após escolhermos o tema, fomos elaborando as perguntas e, com isso, ficamos bem
 # ProjetoM4
 # Perguntas respondidas no site
 1a : 5 Jogos grátis mais avaliados  
-<br><br>
+<br>
+![img]https://github.com/Man-noel/ProjetoM4/tree/main/1a.png?raw=true) <br>
 select name,(positive_ratings+negative_ratings)as avaliacoes,( (positive_ratings/ (positive_ratings+negative_ratings) )*100) as porcentagem_positiva, ( (negative_ratings/(positive_ratings+negative_ratings))*100)as porcentagem_negativa from steam where price = 0 order by avaliacoes desc limit 5 ;
 <br>
 <br>
