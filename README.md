@@ -2,6 +2,8 @@
 
 No módulo IV do curso de DESENVOLVIMENTO WEB FULL STACK da RESILIA EDUCAÇÃO, fomos orientados a organizar e filtrar um banco de dados da steam, onde realizarmos a inserção dos dados dos dados SQL no MYSql. Após, realizamos algumas perguntas e buscamos as respostas por meio consultar na base de dados.
 
+<br>
+Link do github pages : https://man-noel.github.io/ProjetoM4/
 
 ## 🚀 Finalidade
 
